@@ -49,8 +49,10 @@ p {
   background-color: var(--dark);
   color: var(--light);
   text-transform: uppercase;
-  padding: var(--normal-spacer) 0px;
+  padding: var(--normal-spacer);
   letter-spacing: 3px;
+  font-size: 5rem;
+  text-align: center;
 }
 
 .top-menu {
@@ -95,9 +97,13 @@ p {
   align-items: center;
   align-content: center;
   margin: auto auto;
-  border-top: 2px solid black;
   border-bottom: 2px solid black;
   padding: var(--normal-spacer);
+  margin-bottom: var(--big-spacer)
+}
+
+#about h2 {
+  font-size: 5rem;
 }
 
 #about-left-col {
@@ -136,12 +142,14 @@ p {
 #work-left-bar {
   width: 5%;
   margin: auto auto;
-  transform-origin: 0 0;
-  transform: rotate(-90deg);
+  transform: rotate(-90deg); 
+  border-bottom: 4px solid var(--dark);
+  width: fit-content;
 }
 
 #work-left-bar h2 {
   font-size: 5rem;
+  text-align: center;
 }
 
 #courthouse {
@@ -171,7 +179,6 @@ p {
   padding: 10px;
   text-align: center;
   min-height: 40vh;
-  
   border: 1px solid #f1f1f1;
 }
 
@@ -220,4 +227,10 @@ p {
 .card p:nth-child(3){
   font-style: italic;
   text-align: center;
+  padding-top: var(--small-spacer)
+}
+
+.card h3 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
 }

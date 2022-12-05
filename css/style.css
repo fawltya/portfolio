@@ -116,6 +116,11 @@ p {
 
 /* Portfolio cards */
 
+#work {
+  display: flex;
+  width: 100%;
+}
+
 #portfolio-grid {
   display: grid;
   width: 80%;
@@ -126,6 +131,17 @@ p {
     "courthouse courthouse"
     "ried guillemot"
     "maryann proparamedics";
+}
+
+#work-left-bar {
+  width: 5%;
+  margin: auto auto;
+  transform-origin: 0 0;
+  transform: rotate(-90deg);
+}
+
+#work-left-bar h2 {
+  font-size: 5rem;
 }
 
 #courthouse {
@@ -155,8 +171,50 @@ p {
   padding: 10px;
   text-align: center;
   min-height: 40vh;
+  
+  border: 1px solid #f1f1f1;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+/* Style the front side (fallback if image is missing) */
+.card-front {
+  background-color: var(--dark);
+  align-items: center;
+  justify-content: center;
+  color: var(--white)
+}
+
+/* Style the back side */
+.card-back {
+  background-color: var(--light);
+  color: var(--dark);
+  transform: rotateY(180deg);
 }
 
 .card p:nth-child(3){

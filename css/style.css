@@ -51,7 +51,7 @@ p {
   text-transform: uppercase;
   padding: var(--normal-spacer);
   letter-spacing: 3px;
-  font-size: 5rem;
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -65,7 +65,7 @@ p {
   text-transform: uppercase;
   font-weight: 800;
   text-decoration: none;
-  
+  text-align: center;
 }
 
 .top-menu a {
@@ -91,15 +91,15 @@ p {
 
 #about {
   display: flex;
-  max-width: 50%;
+  max-width: 100%;
   justify-items: center;
   justify-content: center;
   align-items: center;
   align-content: center;
   margin: auto auto;
-  border-bottom: 2px solid black;
   padding: var(--normal-spacer);
-  margin-bottom: var(--big-spacer)
+  padding-bottom: 50px;
+  
 }
 
 #about h2 {
@@ -125,6 +125,8 @@ p {
 #work {
   display: flex;
   width: 100%;
+  background-color: var(--dark);
+  padding: 15vh 0px 15vh 0px
 }
 
 #portfolio-grid {
@@ -143,43 +145,62 @@ p {
   width: 5%;
   margin: auto auto;
   transform: rotate(-90deg); 
-  border-bottom: 4px solid var(--dark);
+  border-bottom: 4px solid var(--light);
   width: fit-content;
 }
 
 #work-left-bar h2 {
   font-size: 5rem;
   text-align: center;
+  color: var(--light);
 }
 
 #courthouse {
   grid-area: courthouse;
 }
 
+#courthouse .card-inner {
+  background-image: url(../images/the-court-house.jpg);
+}
+
 #ried {
   grid-area: ried;
+}
+
+#ried .card-inner {
+  background-image: url(../images/ried.jpg);
 }
 
 #guillemot {
   grid-area: guillemot;
 }
 
+#guillemot .card-inner {
+  background-image: url(../images/the-guillemot.jpg);
+}
+
 #maryann {
   grid-area: maryann;
+}
+
+#maryann .card-inner {
+  background-image: url(../images/mary-ann-mccracken.jpg);
 }
 
 #proparamedics {
   grid-area: proparamedics;
 }
 
+#proparamedics .card-inner {
+  background-image: url(../images/proparamedics.jpg);
+}
+
 .card {
-  border: 2px solid grey;
   display: flex;
   flex-direction: column;
   padding: 10px;
   text-align: center;
   min-height: 40vh;
-  border: 1px solid #f1f1f1;
 }
 
 .card-inner {
@@ -189,6 +210,9 @@ p {
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  background-size: cover;
+  border: var(--light) solid 2px;
+
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -211,7 +235,7 @@ p {
 
 /* Style the front side (fallback if image is missing) */
 .card-front {
-  background-color: var(--dark);
+  background-color: rgba(2, 5, 25, 0.80);
   align-items: center;
   justify-content: center;
   color: var(--white)
@@ -233,4 +257,30 @@ p {
 .card h3 {
   text-transform: uppercase;
   font-size: 1.5rem;
+}
+
+/* Contact Section */
+
+#contact {
+  padding: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#contact h2 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+#contact a {
+  text-align: center;
+  padding: 10px;
+}
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  font-size: smaller;
 }

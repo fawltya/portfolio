@@ -22,7 +22,7 @@ Use the anchor links in the navigation bar to jump to different sections on the 
 
 ## Credits
 
-Javascript date code used on the Copyright footer from [Kelsey Martin Copyright Notice](https://kerstinmartin.com/blog/copyright-notice)
+Flipbox animation help from [W3 School - How to flip an image](https://www.w3schools.com/howto/howto_css_flip_image.asp)
 
 ## License
 

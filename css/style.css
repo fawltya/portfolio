@@ -203,6 +203,7 @@ p {
   padding: 10px;
   text-align: center;
   min-height: 40vh;
+  
 }
 
 .card-inner {
@@ -238,10 +239,18 @@ p {
 
 /* Style the front side (fallback if image is missing) */
 .card-front {
-  background-color: rgba(2, 5, 25, 0.80);
-  align-items: center;
-  justify-content: center;
-  color: var(--white)
+  color: var(--white);
+  padding: 5px;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.card-front h3 {
+  background-color: rgba(1, 1, 16, 0.9);
+  padding: 10px 20px;
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  color: var(--light)
 }
 
 /* Style the back side */
@@ -249,6 +258,7 @@ p {
   background-color: var(--light);
   color: var(--dark);
   transform: rotateY(180deg);
+  padding: 15px;
 }
 
 .card-back p:nth-child(3){
@@ -272,6 +282,7 @@ p {
 .card h3 {
   text-transform: uppercase;
   font-size: 1.5rem;
+  
 }
 
 /* Contact Section */
@@ -390,11 +401,13 @@ p {
     background-color: rgba(2, 5, 25, 0.90);
     align-items: center;
     justify-content: center;
-    color: var(--white)
+    color: var(--white);
+    
   }
 
   .card-front h3 {
     display: none;
+    
   }
   
   /* Style the back side */

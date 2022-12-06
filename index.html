@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Seamus Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="./images/design-barn-favicon.png">
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
@@ -15,9 +16,9 @@
     <h1 id="title-header">Seamus Barnett Portfolio</h1>
     <nav>
       <ul class="top-menu">
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#work">Portfolio</a></li>
-        <li><a href="#contact">Contact Me</a></li>
+        <li><a href="#about" title="Scroll to About section">About Me</a></li>
+        <li><a href="#work" title="Scroll to Work section">Portfolio</a></li>
+        <li><a href="#contact" title="Scroll to Contact section">Contact Me</a></li>
       </ul>
 
     </nav>
@@ -32,17 +33,20 @@
         <p>I create attractive and interactive websites to show off the best of your business or organisation.</p>
       </div>
       <div id="about-right-col">
-        <img src="./images/seamus.jpg" alt="Seamus Web Designer" width="200px">
+        <img src="./images/seamus.jpg" title="Seamus Web Designer" alt="A photo of Seamus!" width="200px">
       </div>
     </section>
 
     <!-- portfolio container -->
     <section class="page-section" id="work">
+      <!-- Left Section - rotated Title -->
       <div id="work-left-bar">
         <h2>Work</h2>
       </div>
+      <!-- Right Section - Portfolio Grid -->
       <div id="portfolio-grid">
         <div id="courthouse" class="featured-card card">
+          <!-- Extra Div 'card-inner' needed for flip-hover effect -->
           <div class="card-inner">
             <div class="card-front">
               <h3>The Court House</h3>
@@ -51,7 +55,7 @@
               <h3>The Court House</h3>
               <p>Events based website with calendar</p>
               <p>Website, Branding</p>
-              <a href="https://courthousebangor.com/" target="_blank">Website</a>
+              <a href="https://courthousebangor.com/" title="The Court House Website Link" target="_blank">Website</a>
             </div>
           </div>
         </div>
@@ -64,7 +68,7 @@
               <h3>Re-Imagining Engineering Design</h3>
               <p>University ran engineering project</p>
               <p>Website, Branding</p>
-              <a href="https://riedesign.org/" target="_blank">Website</a>
+              <a href="https://riedesign.org/" title="RIED Website Link" target="_blank">Website</a>
             </div>
           </div>
         </div>
@@ -77,7 +81,7 @@
               <h3>The Guillemot Cafe</h3>
               <p>Gourmet cafe and restaurant with online sales</p>
               <p>Website, E-commerce</p>
-              <a href="https://www.theguillemot.com/" target="_blank">Website</a>
+              <a href="https://www.theguillemot.com/" title="The Guillemot Website Link" target="_blank">Website</a>
             </div>
           </div>
         </div>
@@ -90,7 +94,7 @@
               <h3>Mary Ann McCracken Foundation</h3>
               <p>Charitable organisation</p>
               <p>Website</p>
-              <a href="https://maryannmccrackenfoundation.org/" target="_blank">Website</a>
+              <a href="https://maryannmccrackenfoundation.org/" title="Mary Ann McCracken Website Link" target="_blank">Website</a>
             </div>
          </div>
         </div>
@@ -103,29 +107,26 @@
               <h3>Proparamedics</h3>
               <p>Private ambulance and healthcare services</p>
               <p>Website</p>
-              <a href="https://proparamedics.com/" target="_blank">Website</a>
+              <a href="https://proparamedics.com/" title="Proparamedics Website Link" target="_blank">Website</a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- contact -->
-    
+    </section> 
   </main>
+
+  <!-- contact footer -->
   <footer class="page-section contact" id="contact">
     <h2>Contact Me</h2>
     <div>
-      <a href="mailto:seamus@designbarn.co.uk" alt="Email Link">Email</a>
-      <a href="#" alt="LinkedIn Link">LinkedIn</a>
-      <a href="#" alt="Twitter Link">Twitter</a>
+      <a href="mailto:seamus@designbarn.co.uk" title="Email Link">Email</a>
+      <a href="#" title="LinkedIn Link">LinkedIn</a>
+      <a href="#" title="Twitter Link">Twitter</a>
     </div>
     <div class="footer">
       <p>***</p>
       <p>Website by Seamus</p>
     </div>
-    
   </footer>
 </body>
-
 </html>
